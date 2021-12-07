@@ -32,3 +32,9 @@ cd ../react-app && npm run build && cd ..
 ```
 npm run start
 ```
+
+Open `http://localhost:8080`.
+
+For the React page visit: `http://localhost:8080/user-management`
+
+For the Vue page visit: `http://localhost:8080/user/profile`
