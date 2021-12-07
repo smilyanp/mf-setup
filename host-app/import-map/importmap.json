@@ -1,0 +1,6 @@
+{
+    "imports": {
+        "@mf-setup/react-app": "/node_modules/@mf-setup/react-app/dist/react-app.umd.js",
+        "@mf-setup/vue-app": "/node_modules/@mf-setup/vue-app/dist/index.umd.js"
+    }
+}

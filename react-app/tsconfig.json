@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "sourceMap": true,
+      "noImplicitAny": false,
+      "module": "esnext",
+      "target": "es2015",
+      "jsx": "react",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "skipLibCheck": true,
+      "strictNullChecks": true
+    },
+    "include": [
+      "src/**/*"
+, "assetsTransformer.js"    ],
+    "exclude": [
+      "node_modules/*",
+      "cypress/*"
+    ]
+  }

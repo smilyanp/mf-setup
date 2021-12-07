@@ -1,0 +1,11 @@
+{
+  "name": "mf-setup-repo",
+  "version": "1.0.0",
+  "description": "MF App Setup Demo",
+  "scripts": {
+    "link:vue": "cd ./vue-app && npm link",
+    "link:react": "cd ./react-app && npm link",
+    "link:host": "cd ./host-app && npm link @mf-setup/vue-app && npm link @mf-setup/react-app",
+    "start": "cd ./host-app && npm run start"
+  }
+}

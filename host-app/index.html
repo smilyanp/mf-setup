@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex" />
+    <title>MF Setup</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="/web_modules/single-spa/lib/system/single-spa.min.js"
+      as="script"
+      crossorigin="anonymous"
+    />
+
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "host-app": "/root-application.js",
+          "@mf-setup/environment": "/config/environment.js"
+        }
+      }
+    </script>
+    <script type="systemjs-importmap" src="/import-map/importmap.json"></script>
+
+    <script src="/web_modules/core-js-bundle/minified.js"></script>
+    <script src="/web_modules/zone.js/dist/zone.min.js"></script>
+    <script src="/web_modules/import-map-overrides/dist/import-map-overrides.js"></script>
+    <script src="/web_modules/systemjs/dist/system.min.js"></script>
+    <script src="/web_modules/systemjs/dist/extras/amd.min.js"></script>
+    <script src="/web_modules/systemjs/dist/extras/named-exports.js"></script>
+    <script src="/web_modules/systemjs/dist/extras/named-register.min.js"></script>
+  </head>
+
+  <body>
+    <script>
+      if (global === undefined) {
+        var global = window;
+      }
+      System.import("host-app");
+    </script>
+    <div id="react-auth-app"></div>
+    <div id="layout-header-app"></div>
+
+    <div id="content_container" class="content__container row m-b-0">
+      <div id="row_container" class="row__container col-12 no-pad">
+        <div id="home-app"></div>
+        <div id="angular-app"></div>
+        <div id="angular-app-with-routing"></div>
+        <div id="react-app"></div>
+        <div id="tax-filer-holder-app"></div>
+      </div>
+    </div>
+    
+    <div id="layout-footer-app"></div>
+    <div id="temp-login"></div>
+    <div id="features"></div>
+  </body>
+</html>
