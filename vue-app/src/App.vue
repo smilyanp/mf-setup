@@ -1,16 +1,16 @@
 <template>
-    <div>
-        Content coming from the Vue app
+    <div class="h-full min-h-screen">
+        Vue app content
     </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
+<script>
+export default {
     name: 'App',
-    created () {
-        console.log('** created');
-    },
-});
+
+    created() {
+        console.log('vue app')
+    }
+   
+};
 </script>
